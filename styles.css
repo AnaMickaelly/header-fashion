@@ -256,3 +256,92 @@ img.logo {
     display: none;
   }
 }
+
+
+/* banner-slider */
+
+.banner-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  background-image: url("./images/modelverao.png");
+  background-size: cover;
+}
+
+.banner-slider .container-info-banner {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner-slider .container-info-banner .principal-text-banner {
+  font-weight: 300;
+  font-size: 42px;
+  margin-bottom: 18px;
+  font-family: Open Sans;
+  text-align: center;
+  letter-spacing: 9px;
+  width: 154px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.banner-slider .container-info-banner .second-text-banner {
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Open Sans;
+  text-align: center;
+  letter-spacing: 2.6px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  line-height: 32px;
+}
+
+.banner-slider .container-info-banner .button-banner {
+  font-weight: bold;
+  font-size: 11px;
+  font-family: Open Sans;
+  text-align: center;
+  letter-spacing: 1.6px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  max-width: 70px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  white-space: nowrap;
+  border-bottom: solid 1px #ffffff;
+}
+
+.banner-slider .container-info-banner .detach {
+  background-color: #9A2C6E;
+  padding: 2px;
+}
+
+.dots-banner {
+  display: flex !important;
+  position: absolute;
+  bottom: 5px;
+  gap: 20px;
+  color: #ffffff;
+  right: 50%;
+  left: 50%;
+}
+
+.dots-banner li::marker {
+  font-size: 38px;
+}
+
+.dots-banner li.slick-active {
+  color: #9A2C6E;
+}
+
+.dots-banner li button {
+  display: none;
+}
