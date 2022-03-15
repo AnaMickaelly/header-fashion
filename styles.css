@@ -1,5 +1,15 @@
 .container {
   width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container-header {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -8,9 +18,8 @@
 
 .principal-search {
   position: relative;
-  width: 100%;
-  max-width: 1000px;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -71,11 +80,17 @@ img.logo {
 }
 
 .menu {
-  border-top: 1px solid rgb(103, 103, 103, 0.2);
   padding-top: 16px;
   display: flex;
+  width: 100%;
   gap: 46px;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: 50px;
+}
+
+.divider {
+  border-top: 1px solid rgb(103, 103, 103, 0.2);
+  width: 100vw;
 }
 
 .menu li {
@@ -92,7 +107,7 @@ img.logo {
 
 .menu li.contrast a {
   color: #9a2c6e;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @media (max-width: 600px) {
@@ -237,7 +252,7 @@ img.logo {
 
 .menu-items li.contrast a {
   color: #9a2c6e;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
@@ -259,7 +274,7 @@ img.logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 400px;
   background-image: url("./images/modelverao.png");
   background-size: cover;
@@ -278,7 +293,7 @@ img.logo {
   font-weight: 300;
   font-size: 42px;
   margin-bottom: 18px;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   letter-spacing: 9px;
   width: 154px;
@@ -289,19 +304,20 @@ img.logo {
 .banner-slider .container-info-banner .second-text-banner {
   font-weight: normal;
   font-size: 20px;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   letter-spacing: 2.6px;
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 32px;
   line-height: 32px;
+
 }
 
 .banner-slider .container-info-banner .button-banner {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 11px;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   letter-spacing: 1.6px;
   color: #FFFFFF;
@@ -317,6 +333,7 @@ img.logo {
 .banner-slider .container-info-banner .detach {
   background-color: #9A2C6E;
   padding: 2px;
+  font-weight: 700;
 }
 
 .dots-banner {
@@ -349,26 +366,58 @@ img.logo {
   gap: 20px;
 }
 
-.exchange-info .back-info {
-  width: 21px;
-}
-
-.exchange-info .exchange-one {
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-.exchange-info .exchange-one strong.detach-free {
-  font-weight: 700;
-}
-
-.draught-blazer .blazer-banner {
+.difference-bar {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 56px;
+  padding: 10px;
+  width: 100%;
+}
+
+.difference-bar .back-info {
+  width: 24px;
+}
+
+.sub-banners {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 590px;
+  height: 100%;
+}
+
+
+.exchange-info .exchange-one {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.exchange-info .exchange-one strong {
+  font-weight: 700;
+
+}
+
+.sub-banners-image {
   width: 100%;
   max-width: 392px;
-  height: 400px;
-  background-image: url("./images/blazers.png");
+  height: 100%;
   background-size: cover;
+}
+
+
+
+@media (min-width: 800px) {
+
+  .sub-banners {
+    flex-direction: row;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .display-none {
+    display: none;
+  }
 }
