@@ -10,3 +10,16 @@ $(document).ready(function () {
         nextArrow: "<button style='background-color: transparent; color: #ffffff; border: none; font-size: 36px; margin-right: 8px;'>></button>"
     });
 });
+
+
+$(document).ready(function () {
+    $('.slider-showcase').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: "<img style='padding-left: 10px;' src='images/seta.svg'>",
+        nextArrow: "<img style='padding-right: 10px;' src='images/seta1.svg'>"
+    });
+});
+
+

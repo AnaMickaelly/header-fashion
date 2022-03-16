@@ -383,7 +383,6 @@ img.logo {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-height: 590px;
   height: 100%;
 }
 
@@ -401,12 +400,121 @@ img.logo {
 
 .sub-banners-image {
   width: 100%;
-  max-width: 392px;
+  max-width: 392x;
   height: 100%;
   background-size: cover;
 }
 
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
 
+.text-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.newin-showcase {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #9a2c6e;
+
+}
+
+.button-showcase {
+  font-weight: 700;
+  font-size: 9px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  letter-spacing: 1.6px;
+  color: #b5b5b5;
+  text-transform: uppercase;
+  max-width: 70px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  white-space: nowrap;
+  border-bottom: solid 1px #b5b5b5;
+
+}
+
+.slider-showcase {
+  display: flex;
+  width: 100vw;
+  height: 400px;
+  background-size: cover;
+}
+
+
+.blazer-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.showcase-blazer2 {
+  margin: 0 auto;
+}
+
+.skirt-showcase {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #676767;
+}
+
+.price-showcase {
+  color: #9A2C6E;
+  padding: 2px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.price2-showcase {
+  padding: 2px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #b5b5b5;
+  font-size: 13px;
+}
+
+.sub-banners2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.text-concept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.text-fashion {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 16px;
+}
+
+.text-concept2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #b5b5b5;
+  font-size: 13px;
+  text-align: center;
+  line-height: 22px;
+}
 
 @media (min-width: 800px) {
 
