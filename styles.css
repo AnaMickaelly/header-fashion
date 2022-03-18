@@ -566,12 +566,13 @@ img.logo {
 }
 
 .logo-ecan {
-  height: 70px;
+  height: 21px;
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
   width: 100%;
   justify-content: center;
+  text-align: center;
 }
 
 .create-logo {
@@ -584,13 +585,15 @@ img.logo {
 .createpower-logo {
   font-size: 13px;
   font-family: 'Open Sans', Regular;
-  font-weight: 400
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 .createby-logo {
   font-size: 13px;
   font-family: 'Open Sans', Regular;
-  font-weight: 400
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 .text-end {
