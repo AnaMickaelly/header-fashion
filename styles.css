@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 100%;
   max-width: 1000px;
@@ -108,6 +112,11 @@ img.logo {
 .menu li.contrast a {
   color: #9a2c6e;
   font-weight: 700;
+}
+
+.arrow-purple {
+  position: absolute;
+  right: 0;
 }
 
 @media (max-width: 600px) {
@@ -603,6 +612,44 @@ img.logo {
   text-align: center;
   line-height: 22px;
   font-weight: 400;
+}
+
+
+/* accordion */
+
+.accordion-container {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 15px 28px;
+}
+
+.accordion-container .wrapper {
+  border-bottom: 1px solid #c6c6c6;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.accordion {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: Open Sans, sans-serif;
+}
+
+.accordion .arrow-short {
+  position: absolute;
+  right: 0;
+  bottom: 17px;
+}
+
+
+.content-accordion {
+  display: none;
+  overflow: hidden;
 }
 
 @media (min-width: 800px) {
