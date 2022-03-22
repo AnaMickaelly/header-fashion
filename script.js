@@ -14,11 +14,24 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.slider-showcase').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         arrows: true,
+        dots: true,
+        dotsClass: "dots-banner-two",
         prevArrow: "<img style='padding-left: 10px;' src='images/seta.svg'>",
-        nextArrow: "<img style='padding-right: 10px;' src='images/seta1.svg'>"
+        nextArrow: "<img style='padding-right: 10px;' src='images/seta1.svg'>",
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false 
+            }
+          }
+        ]
     });
 });
 
